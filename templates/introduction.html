@@ -1,0 +1,48 @@
+<html>
+<head>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header-introduction"></div>
+<div id="navigation">
+
+ <ul>
+	<li><a href="/">home</a></li>
+	<li><a href="">book of the year 2017</a></li>
+	<li><a href="">basket</a></li>
+	<li><a href="">shelf</a></li>
+	<li><a href="">support</a></li>
+	<li><a href="">vip</a></li>
+        <li style="padding-left:50px;"><a href="register">register</a></li>
+	<li><a href="login">login</a><li>
+     </ul>
+</div>
+
+<div id="container">
+<div id="left_menu">
+<div id="header_text_L"></div>
+<ul>
+     <li><a href="../">book information</a></li>
+     <li><a href="one">author</a></li>
+          <li><a href="../two">publisher</a></li>
+     <li><a href="">add to basket</a></li>
+     <li><a href="">add to shelf</a></li>
+   </ul>
+</div>
+{% block content %}
+<div id="main">
+<a href="">information</a>&gt;<span id="title">book</span>
+<p align=center><img src="../static/img/book2.jpg" id="main_pic" /></p>
+<p id="main_text">Book abstract:Hamlet is a tragedy written by William Shakespeare at an uncertain date between 1599 and 1602. Set in Denmark, the play dramatises the revenge Prince Hamlet is called to wreak upon his uncle, Claudius, by the ghost of Hamlet's father, King Hamlet. Claudius had murdered his own brother and seized the throne, also marrying his deceased brother's widow.
+</div>
+{% endblock %}
+<div id="footer">
+<p>
+<a href="">abot us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">find more</a>
+</p>
+</div>
+</body>
+</html>

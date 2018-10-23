@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js')}}"></script>
+<script  type="text/javascript">
+ $(document).ready(function(){
+    var id="";
+	var num=1;
+    $("div").hover(function(){
+	 id=$(this).attr("id");
+	 if (id=="s1")
+	 {
+	 num=1;
+	 $("#header").css("background-image","url('../static/img/1.jpg')");
+	 $(this).css("background-color","red");
+	 }
+	 else if(id=="s2")
+	 {
+	 num=2;
+	 $("#header").css("background-image","url('../static/img/2.jpg')");
+	 $(this).css("background-color","red");
+	 }
+	else if(id=="s3")
+	 {
+	 num=3;
+	 $("#header").css("background-image","url('../static/img/3.jpg')");
+	 $(this).css("background-color","red");
+	 }
+	
+	},function(){
+	$(".square").css("background-color","white");
+	
+	
+	});
+	
+ });
+ </script>
+</head>
+<body>
+<div id="header">
+  <div id="nav">
+     <div class="square" id="s1"></div>
+     <div class="square" id="s2"></div>
+     <div class="square" id="s3"></div>
+   </div>
+</div>
+<div id="navigation">
+
+ <ul>
+	<li><a href="">home</a></li>
+	<li><a href="">book of the year 2017</a></li>
+	<li><a href="">baskest</a></li>
+	<li><a href="">shelf</a></li>
+	<li><a href="">support</a></li>
+	<li><a href="">VIP</a></li>
+        <li style="padding-left:50px;"><a href="register">register</a></li>
+	<li><a href="login">login</a><li>
+     </ul>
+</div>
+
+<div id="container">
+<div id="listbook">
+<table cellspacing="70">
+<tr>
+<td><img class="book" src=../static/img/book1.jpg border=0></td>
+<td><a href="Shakespeare"><img class="book" src=../static/img/book2.jpg border=0></td>
+<td><img class="book" src=../static/img/book3.jpg border=0></td>
+</tr>
+</table>
+</div>
+<div id="classify">
+<form>
+<ul>
+<li>
+<select>
+<option>year</option>
+<option>2018</option>
+<option>2017</option>
+<option>2016</option>
+<option>2015</option>
+<option>2014</option>
+<option>2013</option>
+<option>2012</option>
+</select>
+</li>
+<li>
+<select>
+<option>type</option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+</select>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<div id="footer">
+<p>
+<a href="">about us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">find more</a>
+</p>
+</div>
+</body>
+</html>

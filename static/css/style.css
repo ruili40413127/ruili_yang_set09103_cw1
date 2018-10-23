@@ -1,0 +1,151 @@
+#header{
+width:1007px;
+height:340px;
+margin:0px auto;
+background-size:1007px 340px;
+background-image:url("../img/1.jpg");
+position:relative;
+}
+#header-introduction{
+width:1007px;
+height:340px;
+margin:0px auto;
+background-image:url("../img/introduction.jpg");
+background-size:1007px 340px;
+position:relative;
+}
+#header-login{
+width:1007px;
+height:340px;
+margin:0px auto;
+background-image:url("../img//login.jpg");
+background-size:1007px 340px;
+position:relative;
+}
+#guide{
+margin:0 auto;
+width:1007px; 
+height:60px;
+}
+#nav{
+position:absolute;
+top:300px;
+left:450px;
+padding:3px 20px;
+width:100px;
+height:13px;
+background-color:rgba(255,255,255,0.4);
+border-radius:30px;
+text-align:center;
+}
+.square{
+float:left;
+margin:0px 10px;
+padding:5px;
+width:3px;
+height:3px;
+background-color:white;
+-webkit-border-radius:6px;
+}
+#navigation{
+background-color:#00A2CA;
+width:1007px;
+height:45px;
+margin:0px auto;
+}
+#navigation ul{
+list-style-type:none;
+margin:0px auto;
+}
+#navigation ul li{
+float:left;
+font-size:16px;
+padding:11px 0px;
+}
+#navigation ul li a{
+font-size:16px;
+text-decoration:none;
+color:white;
+padding: 11px 20px;
+height:45px;
+}
+#navigation ul li a:hover{
+background-color:silver;
+}
+#container{
+clear:both;
+width:1007px;
+margin:0px auto;		
+}
+#left_menu{
+width:238px;
+float:left;
+margin:5px 0px;
+border:1px solid silver;
+}
+#header_text_L{
+width:238px;
+Text-indent:20px;
+height:14px;
+background-image:url(images/bar.jpg);
+font-size:14px;
+padding:8px 0px;
+color:white;
+font-family:"??";
+}
+#main{
+width:750px;
+margin:5px 0px 5px 5px;
+padding:5px;
+border:1px solid silver;
+float:right;
+}
+#main_pic{
+
+width:100px;
+height:150px;
+border:1px solid silver;
+}
+
+#main_text{
+line-height:1.3em;
+font-size:14px;
+text-indent:2em;
+text-align:justify;
+}
+#listbook{
+width:757px;
+height:300px;
+float:left;
+border:1px solid silver;
+margin:0px auto;
+padding:5px;
+}
+.book{
+width:150px;
+height:216px;	
+}
+#classify{
+width:236px;
+float:right;
+height:300px;
+border:1px solid silver;
+text-align:center;
+}
+
+#footer{
+text-align:center;
+width:1007px;
+margin:0px auto;
+padding:20px 0px;
+background-color:silver;
+clear:both;
+}
+#special{
+padding-left:50px;	
+}
+#container-login{
+width:1007px;
+height:700px;	
+margin:0px auto;
+}

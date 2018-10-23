@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js')}}"></script>
+</head>
+<body>
+<div id="header-login"></div>
+<div id="navigation">
+
+ <ul>
+	<li><a href="/">home</a></li>
+	<li><a href="">packge</a></li>
+	<li><a href="">shelf</a></li>
+	<li><a href="">discount</a></li>
+	<li><a href="">support</a></li>
+	<li><a href="">VIP</a></li>
+        <li><a href="register">register</a></li>
+        <li style="padding-left:50px;"><a href="login">login</a><li>
+     </ul>
+</div>
+
+<div id="container-login">
+<center>
+        <h1>register</h1>
+     <br>
+    <br>
+     <form name="form1">
+     <table  border=yes borderwidth=1px bodercolor=gray>
+     <tr>
+     <td style="text-align:left;">name</td><td  style="align:left"><input type="text" width=20  id="user">  </td>   
+</tr>
+<tr>
+     <td  style="text-align:left">password</td><td   style="align:left"><input type="password" width=20 id="pwd" >  </td>   
+</tr>
+<tr>
+     <td style="text-align:left;">email</td><td  style="align:left"><input type="text" width=20  id="user">  </td>   
+</tr>
+<tr>
+     <td style="text-align:left;">your gender</td><td  style="align:left"><input type="radio" name="sex" checked/>man<input type="radio" name="sex" checked/>woman</td>   
+</tr>
+
+     <td colspan=2 style="text-align:center"> <input type="button" id="ok" value="login">&nbsp;&nbsp;<input type="reset" value="cancle"></td></tr>
+</table>
+</form>
+</center>
+</div>
+<div id="footer">
+<p>
+<a href="">about us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">support</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">more information</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">contact us</a>
+</p>
+</div>
+<script>
+$(document).ready(function(){
+
+
+$("[type='button']").click(function(){
+
+var user=$("#user").val();
+var pwd=$("#pwd").val();
+if ((user=="")||(pwd==0))
+alert("please input name");
+else
+alert("welcom to bookstore"+user);
+});
+});
+</script>
+</body>
+</html>
