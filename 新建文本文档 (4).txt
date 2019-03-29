@@ -1,0 +1,5 @@
+select e.be_ref.b_address.street||' '||e.be_ref.b_address.city||' '||e.be_ref.b_address.postal_code as wrok_address, d.acc_ref.ba_ref.b_address.street||' '||d.acc_ref.ba_ref.b_address.city||' '||d.acc_ref.ba_ref.b_address.postal_code as ac_address
+from t_employee e, t_customeraccount d 
+where d.cust_ref.pname.firstname = e.pname.firstname
+and d.cust_ref.pname.surname = e.pname.surname
+and e.job.supervisorID in (select e.empID from t_employee e where e.job.position = 'Manager' )
